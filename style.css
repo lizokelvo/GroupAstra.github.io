@@ -1,0 +1,94 @@
+/* Общие стили для страницы "О компании" */
+.about-section, .history-section, 
+.management-section, .achievements-section {
+    margin-bottom: 3rem;
+}
+
+.content-block {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Стили для сетки руководства */
+.management-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.manager-card {
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.manager-card:hover {
+    transform: translateY(-5px);
+}
+
+.manager-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #2c3e50;
+}
+
+/* Стили для достижений */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.achievement {
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    border-radius: 8px;
+}
+
+.achievement i {
+    font-size: 2.5rem;
+    color: #1abc9c;
+    margin-bottom: 15px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .float-right, .float-left {
+        float: none;
+        display: block;
+        margin: 0 auto 25px;
+        max-width: 100%;
+    }
+    
+    .management-grid {
+        grid-template-columns: 1fr;
+    }
+}
