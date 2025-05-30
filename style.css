@@ -84,17 +84,6 @@ section:hover {
   margin: 0;
 }
 
-.section-header h2::after {
-  content: '';
-  position: absolute;
-  width: 60px;
-  height: 4px;
-  background: var(--secondary-color);
-  bottom: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 2px;
-}
 
 /* Блоки с контентом */
 .content-block {
@@ -478,4 +467,273 @@ footer {
 
 .fade-in {
   animation: fadeIn 0.6s ease forwards;
+}
+
+
+
+/*news*/
+
+.gradient-image-section {
+  position: relative;
+  min-height: 250px; /* Регулируйте по необходимости */
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.gradient-image-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(90deg, #0c1c26 0%, rgba(19, 48, 76, 0) 50%),
+    url('im.jpeg') no-repeat right center/cover;
+  z-index: -1;
+}
+
+.content {
+  max-width: 100%; 
+  padding: 2rem;
+  color: white; 
+}
+
+/* Стили для новостных карточек */
+.news-section {
+  margin-bottom: 4rem;
+}
+
+section.news-section {
+  margin-bottom: 4rem;
+  background: rgba(0, 82, 245, 0.056);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.news-card1 {
+  background: linear-gradient(to right, rgba(19, 48, 76, 0.7), rgba(19, 48, 76, 0.3)),
+    url("gt.jpg") center/cover;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid var(--gray-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card2 {
+  background: linear-gradient(to right, rgba(19, 48, 76, 0.7), rgba(19, 48, 76, 0.3)),
+    url("23.jpg") center/cover;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid var(--gray-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card3 {
+  background: linear-gradient(to right, rgba(19, 48, 76, 0.7), rgba(19, 48, 76, 0.3)),
+    url("ba.jpg") center/cover;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid var(--gray-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card4 {
+  background: linear-gradient(to right, rgba(19, 48, 76, 0.7), rgba(19, 48, 76, 0.3)),
+    url("35.png") center/cover;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid var(--gray-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card5 {
+  background: linear-gradient(to right, rgba(19, 48, 76, 0.7), rgba(19, 48, 76, 0.3)),
+    url("13.png") center/cover;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid var(--gray-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card6 {
+  background: linear-gradient(to right, rgba(19, 48, 76, 0.7), rgba(19, 48, 76, 0.3)),
+    url("5.png") center/cover;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid var(--gray-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card7 {
+  background: linear-gradient(to right, rgba(19, 48, 76, 0.7), rgba(19, 48, 76, 0.3)),
+    url("95.jpg") center/cover;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid var(--gray-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card8 {
+  background: linear-gradient(to right, rgba(19, 48, 76, 0.7), rgba(19, 48, 76, 0.3)),
+    url("52.jpg") center/cover;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid var(--gray-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card9 {
+  background: linear-gradient(to right, rgba(19, 48, 76, 0.7), rgba(19, 48, 76, 0.3)),
+    url("33.jpg") center/cover;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid var(--gray-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card10 {
+  background: linear-gradient(to right, rgba(19, 48, 76, 0.7), rgba(19, 48, 76, 0.3)),
+    url("F3.jpg") center/cover;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid var(--gray-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--secondary-color);
+}
+
+.news-date {
+  font-size: 0.85rem;
+  color: rgb(184, 244, 244);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.news-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgb(250, 251, 251);
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.news-excerpt {
+  font-size: 0.95rem;
+  color: rgb(255, 255, 255);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.news-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: rgb(255, 255, 255);
+  border-top: 1px solid var(--gray-light);
+  padding-top: 0.75rem;
+  margin-top: auto;
+}
+
+.read-more {
+  color: rgb(184, 244, 244);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+}
+
+.read-more i {
+  margin-left: 0.3rem;
+  transition: var(--transition);
+}
+
+.read-more:hover {
+  color: var(--primary-color);
+}
+
+.read-more:hover i {
+  transform: translateX(3px);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .news-card {
+    padding: 1.25rem;
+  }
+}
+
+/* Стили для спиннера загрузки */
+.news-spinner {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.news-spinner i {
+  color: var(--secondary-color);
+  font-size: 14px;
+}
+
+/* Анимации для новостных карточек */
+.news-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.news-grid {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
