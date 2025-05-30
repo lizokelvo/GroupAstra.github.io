@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О компании - Группа Астра ASTR</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>О компании - ASTR</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="favicon-16x16.png">
+    <link rel="icon" href="favicon-32x32.png">
 </head>
 <body>
-    <!-- Меню-бургер -->
-    <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-    </div>
-    
+      
     <!-- Боковое меню -->
     <nav class="sidebar">
         <ul>
-            <li><a href="index.html" class="active">О компании</a></li>
+            <li><a href="Company.html" class="active">О компании</a></li>
             <li><a href="news.html">Новости</a></li>
             <li><a href="currency.html">Курс валют</a></li>
             <li><a href="contacts.html">Контакты</a></li>
@@ -26,98 +24,147 @@
 
     <!-- Шапка сайта -->
     <header>
+         <!-- Меню-бургер -->
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
         <div class="logo">
-            <img src="images/logo.png" alt="Группа Астра ASTR">
-            <h1>Группа Астра ASTR</h1>
+            <img src="logo.png" alt="Группа Астра ASTR">
         </div>
     </header>
 
     <!-- Основное содержимое -->
     <main>
-        <!-- Секция "О компании" -->
+       <!-- Секция "О компании" -->
         <section class="about-section">
-            <h2><i class="fas fa-building"></i> О компании</h2>
+            <div class="section-header">
+                <i class="fas fa-building"></i>
+                <h2>О компании</h2>
+            </div>
+            <div class="text-content">
+                <p class="lead"><span class="highlight"><strong class="extra-bold">"Группа Астра"</strong></span> - 
+                    один из <u class="underline-accent">лидеров российского рынка</u> информационных технологий в 
+                    области разработки <em class="italic-emphasis">программного обеспечения</em> и средств защиты 
+                    информации. В команде сегодня трудится свыше <span class="emphasize"><strong>2 300 высокопрофессиональных 
+                    сотрудников</strong></span>.</p>    
+            </div>
             <div class="content-block">
-                <img src="images/company-building.jpg" alt="Штаб-квартира компании" class="float-right">
-                <p><strong>Группа Астра ASTR</strong> - российская <u>инновационная компания</u>, работающая в сфере высоких технологий с <em>2005 года</em>.</p>
-                <p>Мы специализируемся на разработке передовых решений в области:</p>
-                <ul>
-                    <li>IT-инфраструктуры</li>
-                    <li>Промышленной автоматизации</li>
-                    <li>Кибербезопасности</li>
-                    <li>Искусственного интеллекта</li>
-                </ul>
-                <p>Подробнее о нашей деятельности можно узнать на <a href="https://astra.ru" target="_blank">официальном сайте</a>.</p>
+                <div class="image-container">
+                    <img src="com.jpg" class="company-image">
+                    <div class="image-overlay"></div>
+                </div>
+
+                <div class="text-content">
+                    <div class="features-box">
+                            <p><strong class="section-subtitle">Программные продукты "Группа Астра" используются во всех отраслях экономики:</strong></p>
+                            <ul class="styled-list">
+                                <li><i class="fas fa-bolt accent-icon"></i> <span class="list-item-bold">В ведущих</span> энергетических и нефтегазовых компаниях</li>
+                                <li><i class="fas fa-chart-line accent-icon"></i> <span class="list-item-bold">В организациях</span> финансового сектора</li>
+                                <li><i class="fas fa-landmark accent-icon"></i> <span class="list-item-bold">В госкомпаниях</span> и госкорпорациях</li>
+                                <li><i class="fas fa-heartbeat accent-icon"></i> <span class="list-item-bold">В медицине</span> и образовании</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <p class="closing"><strong class="brand-name">"Группа Астра"</strong> создает системное и прикладное ПО, 
+                    а также сервисы, которые <span class="benefit-text">удовлетворяют потребности</span> заказчиков 
+                    при создании и проектировании <abbr class="abbr-style">ИТ</abbr>
+                    -инфраструктур.</p>
             </div>
         </section>
 
-        <!-- Секция "История" -->
-        <section class="history-section">
-            <h2><i class="fas fa-history"></i> История компании</h2>
-            <div class="content-block">
-                <img src="images/founders.jpg" alt="Основатели компании" class="float-left">
-                <p>Компания была основана в <strong>2005 году</strong> <em>Иваном Петровым</em> и <em>Алексеем Смирновым</em> как небольшой стартап в области IT-решений.</p>
-                <p>Ключевые вехи развития:</p>
-                <ul>
-                    <li><u>2010 год</u> - выход на международные рынки</li>
-                    <li><u>2015 год</u> - запуск собственного R&D центра</li>
-                    <li><u>2020 год</u> - вхождение в ТОП-50 технологических компаний России</li>
-                </ul>
-                <p>Сегодня в компании работает более <strong>1000 сотрудников</strong> в 5 странах мира.</p>
+        <!-- Секция "продукция" -->
+        <section class="products-section">
+            <div class="section-header">
+                <i class="fas fa-box-open"></i>
+                <h2>Продуктовый портфель</h2>
+            </div>
+
+            <div class="text-content">
+                <p class="lead">В основе экосистемы — <span class="highlight"><strong class="os-name">Astra Linux</strong></span>, 
+                    сертифицированная операционная система со встроенными средствами защиты 
+                    информации для безопасной работы ИТ-инфраструктур любого масштаба.</p>
+            </div>
+
+            <div class="reverse">
+                <div class="text-contents">
+                    <div class="features-box">
+                        <p><strong class="section-subtitle">Всего в портфеле "Группы Астра" более 25 ИТ-решений:</strong></p>
+                        <ul class="styled-list">
+                            <li><i class="fas fa-server accent-icon"></i> <span class="solution-category">Средства виртуализации</span></li>
+                            <li><i class="fas fa-network-wired accent-icon"></i> <span class="solution-category">Управление доменом</span></li>
+                            <li><i class="fas fa-hdd accent-icon"></i> <span class="solution-category">Резервное копирование</span></li>
+                            <li><i class="fas fa-desktop accent-icon"></i> <span class="solution-category">Инфраструктуры виртуальных рабочих мест</span></li>
+                            <li><i class="fas fa-layer-group accent-icon"></i> <span class="solution-category">Инфраструктурные платформы</span></li>
+                            <li><i class="fas fa-envelope accent-icon"></i> <span class="solution-category">Корпоративная почта</span></li>
+                            <li><i class="fas fa-mobile-alt accent-icon"></i> <span class="solution-category">Мобильное рабочее место</span></li>
+                        </ul>
+                    </div>                 
+                </div>
+                
+                <div class="image-container">
+                    <img src="gf.jpeg" class="products-image">
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <p class="closing"><strong class="registry-name">"Единый реестр российских программ для ЭВМ и баз данных"</strong> 
+                    Минцифры включает все решения компании.</p>
             </div>
         </section>
 
-        <!-- Секция "Руководство" -->
+        <!-- Секция "Стратегическая цель" -->
         <section class="management-section">
-            <h2><i class="fas fa-users"></i> Руководство</h2>
-            <div class="content-block">
-                <div class="management-grid">
-                    <div class="manager-card">
-                        <img src="images/director1.jpg" alt="Генеральный директор">
-                        <h3>Иван Петров</h3>
-                        <p><em>Генеральный директор</em></p>
-                        <p>Основатель компании, доктор технических наук</p>
-                    </div>
-                    <div class="manager-card">
-                        <img src="images/director2.jpg" alt="Технический директор">
-                        <h3>Алексей Смирнов</h3>
-                        <p><em>Технический директор</em></p>
-                        <p>Основатель компании, эксперт в области кибербезопасности</p>
-                    </div>
+            <div class="section-header">
+                <i class="fas fa-users"></i>
+                <h2>Стратегическая цель</h2>
+            </div>
+            <div class="management-grid">
+                <div class="image-containers">
+                     <img src="as.jpg" class="manager-image">                          
                 </div>
+            </div>
+
+            <div class="text-content">
+                    <p><span class="goal-year">К 2030 году</span> <strong class="goal-text">
+                            стать глобальным вендором</strong> системного <abbr title="Программного обеспечения" class="abbr-style">
+                            ПО</abbr>, который <span class="goal-detail">обеспечивает потребности рынка</span> 
+                            в специализированных и общих решениях и <span class="goal-detail">формирует единые ИТ-стандарты</span>.</p> 
             </div>
         </section>
 
-        <!-- Секция "Достижения" -->
+        <!-- Секция "Миссия" -->
         <section class="achievements-section">
-            <h2><i class="fas fa-trophy"></i> Наши достижения</h2>
-            <div class="content-block">
-                <div class="achievements-grid">
-                    <div class="achievement">
-                        <i class="fas fa-award"></i>
-                        <p><strong>Премия "Технологии будущего"</strong><br>2022 год</p>
-                    </div>
-                    <div class="achievement">
-                        <i class="fas fa-medal"></i>
-                        <p><strong>Лучший работодатель года</strong><br>2021-2023</p>
-                    </div>
-                    <div class="achievement">
-                        <i class="fas fa-certificate"></i>
-                        <p><strong>Сертификат ISO 9001</strong><br>С 2018 года</p>
-                    </div>
+            <div class="section-header">
+                <i class="fas fa-trophy"></i>
+                <h2>Миссия</h2>
+            </div>
+            <div class="management-grid">
+                <div class="image-containers">
+                     <img src="ek.jpg" class="mission-image">                          
                 </div>
+            </div>
+
+            <div class="text-content">
+                <p><strong class="abbr-style">Обеспечение технологического суверенитета России</strong> 
+                        и её лидерства на мировом ИТ-рынке путём разработки базовых информационных технологий, 
+                        общего и специального <abbr class="abbr-style">ПО</abbr>, 
+                        а также создания на их основе <span class="mission-emphasis">масштабной экосистемы российского ПО</span>.</p>
             </div>
         </section>
     </main>
 
     <!-- Кнопка "Наверх" -->
-    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    <a href="#" class="back-to-top" title="Наверх">↑</a>
 
     <!-- Подвал сайта -->
     <footer>
-        <p>&copy; 2023 Группа Астра ASTR. Все права защищены.</p>
+        <p>&copy; 2008-2025 Группа Астра ASTR. Все права защищены.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
