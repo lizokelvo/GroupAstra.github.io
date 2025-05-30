@@ -1,6 +1,7 @@
 // Активация меню-бургера
 document.querySelector('.menu-btn').addEventListener('click', function() {
     document.querySelector('.sidebar').classList.toggle('active');
+    this.classList.toggle('opened');
 });
 
 // Плавная прокрутка для кнопки "Наверх"
@@ -15,13 +16,7 @@ document.querySelector('.back-to-top').addEventListener('click', function(e) {
 // Фиксация кнопки "Наверх"
 window.addEventListener('scroll', function() {
     const backToTop = document.querySelector('.back-to-top');
-    if (window.pageYOffset > 300) {
-        backToTop.style.opacity = '1';
-        backToTop.style.visibility = 'visible';
-    } else {
-        backToTop.style.opacity = '0';
-        backToTop.style.visibility = 'hidden';
-    }
+    backToTop.style.display = window.pageYOffset > 300 ? 'flex' : 'none';
 });
 
 // Анимация при прокрутке
