@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - ASTR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="favicon-16x16.png">
+    <link rel="icon" href="favicon-32x32.png">
+</head>
+<body>
+      
+    <!-- Боковое меню -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="Company.html">О компании</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="currency.html">Курс валют</a></li>
+            <li><a href="contacts.html" class="active">Контакты</a></li>
+            <li><a href="video.html">Видео</a></li>
+        </ul>
+    </nav>
+
+    <!-- Шапка сайта -->
+    <header>
+         <!-- Меню-бургер -->
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            <img src="logo.png" alt="Группа Астра ASTR">
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+        <section class="contacts-section">
+            <div class="section-header">
+                <h2><i class="fas fa-address-book accent-icon"></i> Контактная информация</h2>
+            </div>
+
+            <!-- Контакты и соцсети в одной строке -->
+            <div class="contacts-row">
+                <div class="contact-info">
+                    <div class="phone-block">
+                        <h3><i class="fas fa-phone-volume accent-icon"></i> Телефон</h3>
+                        <a href="tel:88002220700" class="phone-link">
+                            8 (800) 222-07-00
+                        </a>
+                    </div>
+                    
+                    <div class="social-block">
+                        <h3><i class="fas fa-share-alt accent-icon"></i> Социальные сети</h3>
+                        <div class="social-icons">
+                            <a href="https://t.me/astragroup" target="_blank" class="social-icon" aria-label="Telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://vk.com/gruppa_astra" target="_blank" class="social-icon" aria-label="ВКонтакте">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="https://rutube.ru/channel/23720491/" target="_blank" class="social-icon" aria-label="Rutube">
+                                <i class="fas fa-play"></i>
+                            </a>
+                            <a href="https://habr.com/ru/companies/astralinux/articles/" target="_blank" class="social-icon" aria-label="Habr">
+                                <i class="fab fa-hacker-news"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Расположение офисов -->
+            <div class="section-subheader">
+                <h3><i class="fas fa-map-marked-alt accent-icon"></i> Расположение</h3>
+            </div>
+
+            <div class="locations-row">
+                <!-- Главный офис с картой -->
+                <div class="map-block">
+                    <h4><i class="fas fa-building accent-icon"></i> Главный офис</h4>
+                    <p>Москва, Огородный проезд, 16/1с5</p>
+                    <div class="map-container">
+                        <iframe src="https://yandex.ru/map-widget/v1/org/astra/134653304820/?ll=37.600693%2C55.816546&z=17" 
+                                width="100%" 
+                                height="300" 
+                                frameborder="0" 
+                                allowfullscreen="true">
+                        </iframe>
+                    </div>
+                    <div class="img-company">
+                        <img src="74.png" class="image">
+                    </div>
+                </div>
+
+                <!-- Региональные офисы -->
+                <div class="offices-block">
+                    <h4><i class="fas fa-city accent-icon"></i> Региональные офисы</h4>
+                    <div class="offices-list">
+                        <div class="office-item">
+                            <h5><i class="fas fa-map-pin accent-icon"></i> Владивосток</h5>
+                            <p>ул. Енисейская, д.23, корпус 2, 18 этаж</p>
+                        </div>
+                        <div class="office-item">
+                            <h5><i class="fas fa-map-pin accent-icon"></i> Иннополис</h5>
+                            <p>Республика Татарстан, ул. Университетская, д. 7</p>
+                        </div>
+                        <div class="office-item">
+                            <h5><i class="fas fa-map-pin accent-icon"></i> Симферополь</h5>
+                            <p>ул. Фрунзе/Ленинградская, 19/7</p>
+                        </div>
+                        <div class="office-item">
+                            <h5><i class="fas fa-map-pin accent-icon"></i> Санкт-Петербург</h5>
+                            <p>ул. Марата 69-71, БЦ Icon, корп B, 3й вход, 5й этаж направо, офис 20-Н</p>
+                        </div>
+                        <div class="office-item">
+                            <h5><i class="fas fa-map-pin accent-icon"></i> Нижний Новгород</h5>
+                            <p>ул. Максима Горького, д. 262</p>
+                        </div>
+                        <div class="office-item">
+                            <h5><i class="fas fa-map-pin accent-icon"></i> Краснодар</h5>
+                            <p>ул.Северная, 490 БЦ «Кутузовский», 3 этаж, оф.302</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Электронная почта -->
+            <div class="section-subheader">
+                <h3><i class="fas fa-envelope accent-icon"></i> Электронная почта</h3>
+            </div>
+
+            <div class="email-grid">
+                <!-- Первая строка -->
+                <div class="email-row">
+                    <div class="email-card">
+                        <div class="email-icon-container">
+                            <i class="fas fa-building email-icon"></i>
+                        </div>
+                        <h4>Головной офис</h4>
+                        <a href="mailto:info@astralinux.ru">info@astralinux.ru</a>
+                    </div>
+                    
+                    <div class="email-card">
+                        <div class="email-icon-container">
+                            <i class="fas fa-shopping-cart email-icon"></i>
+                        </div>
+                        <h4>Отдел продаж</h4>
+                        <a href="mailto:sales@astralinux.ru">sales@astralinux.ru</a>
+                    </div>
+                    
+                    <div class="email-card">
+                        <div class="email-icon-container">
+                            <i class="fas fa-graduation-cap email-icon"></i>
+                        </div>
+                        <h4>Образование</h4>
+                        <a href="mailto:education@astralinux.ru">education@astralinux.ru</a>
+                    </div>
+                </div>
+                
+                <!-- Вторая строка -->
+                <div class="email-row">
+                    <div class="email-card">
+                        <div class="email-icon-container">
+                            <i class="fas fa-handshake email-icon"></i>
+                        </div>
+                        <h4>Партнерам</h4>
+                        <a href="mailto:partner@astralinux.ru">partner@astralinux.ru</a>
+                    </div>
+                    
+                    <div class="email-card">
+                        <div class="email-icon-container">
+                            <i class="fas fa-certificate email-icon"></i>
+                        </div>
+                        <h4>Ready For Astra</h4>
+                        <a href="mailto:readyfor@astralinux.ru">readyfor@astralinux.ru</a>
+                    </div>
+                    
+                    <div class="email-card">
+                        <div class="email-icon-container">
+                            <i class="fas fa-microchip email-icon"></i>
+                        </div>
+                        <h4>Разработчикам оборудования</h4>
+                        <a href="mailto:oem-partners@astralinux.ru">oem-partners@astralinux.ru</a>
+                    </div>
+                </div>
+                
+                <!-- Третья строка -->
+                <div class="email-row">
+                    <div class="email-card">
+                        <div class="email-icon-container">
+                            <i class="fas fa-code email-icon"></i>
+                        </div>
+                        <h4>Разработчикам ПО</h4>
+                        <a href="mailto:isv@astralinux.ru">isv@astralinux.ru</a>
+                    </div>
+                    
+                    <div class="email-card">
+                        <div class="email-icon-container">
+                            <i class="fas fa-chart-line email-icon"></i>
+                        </div>
+                        <h4>Инвесторам</h4>
+                        <a href="mailto:ir@astralinux.ru">ir@astralinux.ru</a>
+                    </div>
+                    
+                    <div class="email-card">
+                        <div class="email-icon-container">
+                            <i class="fas fa-headset email-icon"></i>
+                        </div>
+                        <h4>Горячая линия</h4>
+                        <a href="https://astra.ru/hot_line/" target="_blank">astra.ru/hot_line/</a>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="back-to-top" title="Наверх">↑</a>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <p>&copy; 2008-2025 Группа Астра ASTR. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
