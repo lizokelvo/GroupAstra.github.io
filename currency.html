@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс валют RUB-TMT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="favicon-16x16.png">
+    <link rel="icon" href="favicon-32x32.png">
+    <link rel="dns-prefetch" href="https://www.cbr-xml-daily.ru/" />
+
+</head>
+<body>
+      
+    <!-- Боковое меню -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="Company.html">О компании</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="currency.html" class="active">Курс валют</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="video.html">Видео</a></li>
+        </ul>
+    </nav>
+
+    <!-- Шапка сайта -->
+    <header>
+         <!-- Меню-бургер -->
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            <img src="logo.png" alt="Группа Астра ASTR">
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+         <div class="currency-app">
+            <h1><i class="fas fa-exchange-alt"></i> Конвертер RUB/TMT</h1>
+            
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Загрузка данных...</p>
+            </div>
+            
+            <div class="currency-info">
+                <p>Курс ЦБ РФ: <span id="current-rate">-</span></p>
+                <p>Дата обновления: <span id="update-date">-</span></p>
+                <p>Дата конвертации: <span id="conversion-date">-</span></p>
+            </div>
+            
+            <div class="converter">
+                <div class="converter-row">
+                    <input type="number" id="amount-input" placeholder="Сумма" value="100">
+                    <select id="from-currency">
+                        <option value="RUB">RUB - Российский рубль</option>
+                        <option value="TMT">TMT - Туркменский манат</option>
+                    </select>
+                    <div class="swap-btn" id="swap-btn">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <select id="to-currency">
+                        <option value="TMT">TMT - Туркменский манат</option>
+                        <option value="RUB">RUB - Российский рубль</option>
+                    </select>
+                    <button id="convert-btn">Конвертировать</button>
+                </div>
+                <div class="result" id="result"></div>
+            </div>
+            
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h2><i class="fas fa-chart-bar"></i> График курса TMT/RUB</h2>
+                </div>
+                <div class="chart-controls">
+                    <select id="chart-period">
+                        <option value="7">7 дней</option>
+                        <option value="30" selected>30 дней</option>
+                        <option value="90">90 дней</option>
+                    </select>
+                </div>
+                <canvas id="currency-chart"></canvas>
+                <div class="chart-info" id="chart-info"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="back-to-top" title="Наверх">↑</a>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <p>&copy; 2008-2025 Группа Астра ASTR. Все права защищены.</p>
+    </footer>
+
+    <script src="//www.cbr-xml-daily.ru/daily_jsonp.js" async></script>
+    <script src="https://www.cbr-xml-daily.ru/money.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
