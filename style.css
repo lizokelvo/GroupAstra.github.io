@@ -958,3 +958,327 @@ h1 {
 .chart-header i {
     color: var(--secondary-color);
 }
+
+
+
+
+.contacts-section {
+    background: #bcced3;
+    margin: 2rem auto;
+    max-width: 1200px;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-subheader h3 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.accent-icon {
+    color: var(--primary);
+}
+
+/* Блок контактов и соцсетей */
+.contacts-row {
+    background: linear-gradient(135deg, #dff2ff 0%, #bfe4fd 100%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.phone-block, .social-block {
+    flex: 1;
+    min-width: 300px;
+}
+
+.phone-block h3, .social-block h3 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.phone-link {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.phone-link:hover {
+    color: var(--primary);
+    transform: translateX(3px);
+}
+
+.phone-description {
+    color: var(--text);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 1.2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--gray);
+}
+
+.social-icon:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.social-icon:nth-child(1):hover { background: #034a70; color: white; } /* Telegram */
+.social-icon:nth-child(2):hover { background: #5a7594; color: white; } /* VK */
+.social-icon:nth-child(3):hover { background: #dd9595; color: white; } /* Rutube */
+.social-icon:nth-child(4):hover { background: #b1d17a; color: white; } /* Habr */
+
+/* Блок расположения */
+.locations-row {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.map-block {
+    flex: 1;
+    height: 700px;
+    min-width: 300px;
+    background: linear-gradient(135deg, #cae4f5 0%, #432aff4e 100%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.offices-block {
+    flex: 1;
+    min-width: 300px;
+    background: linear-gradient(85deg, #cae4f5 0%, #432aff4e 100%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.map-block h4, .offices-block h4 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.map-container {
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--gray);
+}
+
+.img-company {
+  flex: 0 0 70%; 
+  width: 70%;
+  max-width: 350px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin: 0 auto; 
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  mask-image: linear-gradient(
+    to right, 
+    transparent 0%, 
+    black 10%, 
+    black 90%, 
+    transparent 100%
+  );
+  opacity: 0.9;
+}
+
+.offices-list {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+    gap: 5px;
+}
+
+.office-item {
+    padding: 12 px;
+    background: var(--light);
+    border-radius: 15px;
+    border-left: 6px solid var(--primary);
+    transition: all 0.3s ease;
+}
+
+.office-item:hover {
+    background: #bedaff;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.office-item h5 {
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.office-item p {
+    color: var(--text);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Карточки email */
+.email-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.email-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.email-card {
+    background: linear-gradient(85deg, #b595ff88 0%, #1c07b94e 100%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 2px solid #16165f5b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+}
+
+.email-icon-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #eff6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.email-icon {
+    font-size: 1.8rem;
+    color: #5713e9;
+}
+
+.email-card h4 {
+    color: #1e293b;
+    margin: 0.75rem 0;
+    font-size: 1.1rem;
+    flex-grow: 1;
+}
+
+.email-card a {
+    color: #001748;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    word-break: break-word;
+    margin-top: auto;
+}
+
+.email-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-color: #314b76;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .email-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 1024px) {
+  .img-company {
+    flex: 0 0 70%;
+    width: 70%;
+    max-width: 450px;
+    margin-bottom: 1.5rem;
+  }
+}
+/* Адаптивность */
+@media (max-width: 768px) {
+    .contacts-section {
+        padding: 1.25rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+    }
+    
+    .phone-block, .social-block {
+        min-width: 100%;
+    }
+    
+    .locations-row {
+        flex-direction: column;
+    }
+    
+    .map-block, .offices-block {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .phone-link {
+        font-size: 1.3rem;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .offices-list {
+        grid-template-columns: 1fr;
+    }
+}
