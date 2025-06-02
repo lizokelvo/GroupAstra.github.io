@@ -1,4 +1,3 @@
-/* Обновленные стили с современным дизайном */
 :root {
   --primary-color: #13304c;
   --secondary-color: #1abc9c;
@@ -13,7 +12,6 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Глобальные стили */
 body {
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   margin: 0;
@@ -24,7 +22,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Шапка сайта */
 header {
   position: sticky;
   top: 0;
@@ -43,14 +40,12 @@ header {
   transition: var(--transition);
 }
 
-/* Основное содержимое */
 main {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-/* Секции */
 section {
   margin-bottom: 4rem;
   background: var(--white);
@@ -84,8 +79,6 @@ section:hover {
   margin: 0;
 }
 
-
-/* Блоки с контентом */
 .content-block {
   display: flex;
   gap: 3rem;
@@ -114,7 +107,6 @@ section:hover {
   justify-content: center;
 }
 
-/* Изображения */
 .image-container {
   flex: 0 0 45%;
   position: relative;
@@ -168,7 +160,6 @@ section:hover {
   background: linear-gradient(135deg, rgba(26,188,156,0.2) 0%, rgba(19,48,76,0.6) 100%);
 }
 
-/* Текст и списки */
 .lead {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -224,7 +215,6 @@ section:hover {
   padding-top: 1.5rem;
 }
 
-/* Боковое меню */
 .sidebar {
   position: fixed;
   top: 0;
@@ -265,7 +255,6 @@ section:hover {
   background: var(--secondary-color);
 }
 
-/* Кнопка меню */
 .menu-btn {
   position: fixed;
   top: 1.5rem;
@@ -294,7 +283,6 @@ section:hover {
   font-size: 1.5rem;
 }
 
-/* Кнопка "Наверх" */
 .back-to-top {
   position: fixed;
   bottom: 20px;
@@ -323,7 +311,6 @@ section:hover {
   transform: translateY(-5px);
 }
 
-/* Дополнительные стили для текстовых выделений */
 .extra-bold {
     font-weight: 800;
     font-size: 1.1em;
@@ -419,7 +406,6 @@ section:hover {
     margin-right: 0.3em;
 }
 
-/* Подвал */
 footer {
   background: var(--primary-color);
   color: var(--white);
@@ -428,7 +414,6 @@ footer {
   margin-top: 4rem;
 }
 
-/* Адаптивность */
 @media (max-width: 1024px) {
   .content-block {
     flex-direction: column;
@@ -459,7 +444,6 @@ footer {
   }
 }
 
-/* Анимации */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -469,13 +453,9 @@ footer {
   animation: fadeIn 0.6s ease forwards;
 }
 
-
-
-/*news*/
-
 .gradient-image-section {
   position: relative;
-  min-height: 250px; /* Регулируйте по необходимости */
+  min-height: 250px; 
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -500,7 +480,6 @@ footer {
   color: white; 
 }
 
-/* Стили для новостных карточек */
 .news-section {
   margin-bottom: 4rem;
 }
@@ -703,7 +682,6 @@ section.news-section {
   transform: translateX(3px);
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
   .news-grid {
     grid-template-columns: 1fr;
@@ -714,7 +692,6 @@ section.news-section {
   }
 }
 
-/* Стили для спиннера загрузки */
 .news-spinner {
   display: inline-block;
   margin-left: 8px;
@@ -725,7 +702,6 @@ section.news-section {
   font-size: 14px;
 }
 
-/* Анимации для новостных карточек */
 .news-card {
   opacity: 0;
   transform: translateY(20px);
@@ -737,9 +713,6 @@ section.news-section {
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
-
-
 
 .currency-app {
     max-width: 800px;
@@ -959,9 +932,6 @@ h1 {
     color: var(--secondary-color);
 }
 
-
-
-
 .contacts-section {
     background: #bcced3;
     margin: 2rem auto;
@@ -985,7 +955,7 @@ h1 {
     color: var(--primary);
 }
 
-/* Блок контактов и соцсетей */
+
 .contacts-row {
     background: linear-gradient(135deg, #dff2ff 0%, #bfe4fd 100%);
     border-radius: 10px;
@@ -1063,7 +1033,7 @@ h1 {
 .social-icon:nth-child(3):hover { background: #dd9595; color: white; } /* Rutube */
 .social-icon:nth-child(4):hover { background: #b1d17a; color: white; } /* Habr */
 
-/* Блок расположения */
+
 .locations-row {
     display: flex;
     gap: 2rem;
@@ -1167,7 +1137,6 @@ h1 {
     line-height: 1.4;
 }
 
-/* Карточки email */
 .email-grid {
     display: flex;
     flex-direction: column;
@@ -1280,5 +1249,88 @@ h1 {
     
     .offices-list {
         grid-template-columns: 1fr;
+    }
+}
+
+
+.video-section {
+    background: linear-gradient(85deg, #a6aede88 0%, #1350a085 100%);
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.video-name {
+    background: rgb(135, 158, 234);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.video-name h3 {
+    font-size: 1.5rem; 
+    font-weight: 700;
+    color: rgb(6, 9, 44);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.video-embed {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.video-description {
+    font-size: 1.5rem; 
+    line-height: 2;
+    color: rgb(6, 9, 44);
+    margin-top: 1.6rem;
+    font-weight: bold;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .video-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .video-name {
+        padding: 1rem;
+    }
+
+    .video-name h3 {
+        font-size: 1.3rem;
+    }
+    
+    .video-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-section {
+        padding: 1.5rem;
     }
 }
